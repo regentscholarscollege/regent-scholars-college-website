@@ -433,7 +433,10 @@ h1 {
 .program-grid,
 .timeline,
 .campus-layout,
-.requirements-grid {
+.requirements-grid,
+.summer-camp-layout,
+.summer-camp-points,
+.summer-camp-posters {
   display: grid;
   gap: 22px;
 }
@@ -479,6 +482,110 @@ h1 {
 
 .requirements-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.summer-camp-layout {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+}
+
+.summer-camp-copy {
+  padding: 34px 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.summer-camp-copy h3 {
+  margin: 10px 0 16px;
+  font-size: 2rem;
+}
+
+.summer-camp-copy > p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.summer-camp-points {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 22px;
+}
+
+.summer-camp-points article {
+  padding: 18px;
+  border-radius: 14px;
+  background: #f8fafe;
+  border: 1px solid #dde3ef;
+}
+
+.summer-camp-points strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #24345e;
+}
+
+.summer-camp-points p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.summer-camp-posters {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.summer-camp-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 28px;
+  padding: 28px 30px;
+  border-radius: var(--radius-lg);
+  border: 1px solid #223155;
+  background: linear-gradient(180deg, #26355d 0%, #1f2b4b 100%);
+  box-shadow: 0 10px 26px rgba(23, 31, 56, 0.16);
+}
+
+.summer-camp-cta h3,
+.summer-camp-cta p,
+.summer-camp-cta .eyebrow {
+  color: #f5f8ff;
+}
+
+.summer-camp-cta .eyebrow {
+  margin-bottom: 10px;
+  color: #d7e2fb;
+}
+
+.summer-camp-cta .button.primary {
+  background: #ffffff;
+  color: #24345e;
+  white-space: nowrap;
+}
+
+.poster-card {
+  margin: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.poster-card img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #dbe2f0;
+}
+
+.poster-card figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .timeline article strong {
@@ -583,6 +690,10 @@ h1 {
   .program-grid,
   .timeline,
   .requirements-grid,
+  .summer-camp-layout,
+  .summer-camp-points,
+  .summer-camp-posters,
+  .summer-camp-cta,
   .campus-layout,
   .contact-card,
   .footer {
@@ -650,6 +761,8 @@ h1 {
   .hero-copy,
   .hero-card,
   .program-card,
+  .summer-camp-copy,
+  .poster-card,
   .campus-feature,
   .contact-card,
   .about-grid article,
